@@ -13,5 +13,17 @@ jobs:
           node-version: '21.5.0'
       - run: npm install
       - run: npm run build
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the latest repository code
+        uses: actions/checkout@v4
+
+      - name: Use node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21.5.0'
+      - run: npm install
+      - run: npm test
     
 
