@@ -12,6 +12,6 @@ jobs:
         with: 
           node-version: '21.5.0'
       - run: npm install
-      - run: npm build
+      - run: npm run build
     
 
